@@ -55,9 +55,10 @@ body {
     background-image: url("C:/Users/YASHVI GUPTA/OneDrive/Desktop/bg.jpg"); /* Change this to your image */
     background-size: contain; /* Ensure the image covers the entire element */
     background-position: right center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repeating */
     animation: kenburns-top 10s ease-in-out infinite; /* Apply the Ken Burns animation */
     margin: 50px 100px 100px auto; ;
-     stroke-opacity: 50%;
+    stroke-opacity: 50%;
     display: flex; /* Center content */
     align-items: left; /* Vertical alignment */
     justify-content: right; /* Horizontal alignment */

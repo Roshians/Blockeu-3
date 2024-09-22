@@ -5,137 +5,152 @@ import VideoSlideshow from './video';
 const Web = () => {
   const cardStyle = {
     flex: 1,
-    backgroundColor: '#f8f9fa',
+    backgroundColor: '#2d2f3dff',
     borderRadius: '8px',
     padding: '20px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
+    transition: 'transform 0.3s ease, background 0.5s ease',
   };
-
+  const headingStyle = {
+    fontSize: '24px', // Increase font size as needed
+    color: '#ADFF2F', // Change color if needed
+    marginBottom: '5px', // Reduce space below heading
+  };
+  const paragraphStyle = {
+    color: '#ffffff', // Set text color
+    marginTop: '0px', // Reduce space above paragraph
+    lineHeight: '1.5', // Adjust line height if necessary
+    textAlign: 'left', // Align text to the left
+    fontFamily: 'Times New Roman', // Change to your preferred font
+    fontSize: '18px', // Adjust font size as needed
+  };
+  
+    
   const imgStyle = {
     maxWidth: '80px',
     margin: '50 auto 15px',
   };
 
+
   return (
     <div>
       {/* Main Section */}
       <div className="container container-main">
-        <h1>
-          Blockchain Demystified: Your Gateway to Tomorrow's Technology,<br /> Where Curiosity Meets Blockchain Mastery
-        </h1>
+        <h1>Blockchain Demystified: Your Gateway to Future Technology,<br /> Where Curiosity Meets Blockchain Mastery</h1>
         <p>Discover, Understand, Innovate: The World of Blockchain Awaits!</p>
+</div>
+
+<div className="flex-container">
+  <div className="left-container">
+    {/* Chat Box */}
+    <div className="chat-box">
+      <h5>Curious About Blockchain? Ask Us at Blockedu!</h5>
+      <div className="chat-messages">
+        <button>What is immutability in blockchain?</button>
+        <button>Explain smart contract in simple words.</button>
+        <button>What are NFT's and why are they used?</button>
       </div>
-
-      <div className="flex-container">
-        <div className="left-container">
-          {/* Chat Box */}
-          <div className="chat-box">
-            <h5>Curious About Blockchain? Ask Us at Blockedu!</h5>
-            <div className="chat-messages">
-              <button>What is immutability in blockchain?</button>
-              <button>Explain smart contract in simple words.</button>
-              <button>What are NFTs and why are they used?</button>
-            </div>
-            <div className="input-group">
-              <input
-                type="text"
-                className="form-control chat-input"
-                placeholder="Ask anything about block technology"
-              />
-              <button className="btn search-button">
-                <i className="bi bi-arrow-up"></i>
-              </button>
-            </div>
-          </div>
-          <div className="ask-section">
-            <button className="ask-button">Ask Blockedu</button>
-          </div>
-        </div>
-        <div className="kenburns-bg">
-          <h1></h1>
-        </div>
+      <div className="input-group">
+        <input
+          type="text"
+          className="form-control chat-input"
+          placeholder="Ask anything about block technology"
+        />
+        <button className="btn search-button">
+          <i className="bi bi-arrow-up"></i>
+        </button>
       </div>
+    </div>
+    <div className="ask-section">
+      <button className="ask-button">Ask Blockedu</button>
+    </div>
+  </div>
+  <div className="kenburns-bg">
+    <h1></h1>
+  </div>
+</div>
 
-      <div className="container featured-section">
-        <h2 className="text-center">Develop your first smart contract</h2>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'stretch',
-            gap: '20px',
-          }}
-        >
-          {/* First Card: Cutting Edge */}
-          <div style={cardStyle}>
-            <img src="cutting-edge-icon.png" alt="Cutting Edge" style={imgStyle} />
-            <h5>Cutting Edge</h5>
-            <p>Discover the most innovative Web3 contracts, showcasing fresh ideas and advanced techniques.</p>
-          </div>
-
-          {/* Second Card: Cookbook */}
-          <div style={cardStyle}>
-            <img src="cookbook-icon.png" alt="Cookbook" style={imgStyle} />
-            <h5>Cookbook</h5>
-            <p>A comprehensive guide to building your own smart contracts with step-by-step examples.</p>
-          </div>
-
-          {/* Third Card: OpenZeppelin */}
-          <div style={cardStyle}>
-            <img src="openzeppelin-icon.png" alt="OpenZeppelin" style={imgStyle} />
-            <h5>OpenZeppelin</h5>
-            <p>OpenZeppelin provides battle-tested smart contracts for Ethereum and EVM blockchains.</p>
-          </div>
+<div className="container featured-section">
+      <h2 className="text-center">Develop your first smart contract</h2>
+      <div style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'stretch',
+        gap: '20px',
+      }}>
+        {/* First Card: Basic DAO */}
+        <div style={cardStyle}>
+         <img src={require('./images/basicdao.png')} alt="Basic DAO" style={imgStyle} />
+         <h5 style={headingStyle}>Basic DAO</h5>
+         <p style={paragraphStyle}>A very simple and easy implementation of a DAO. Voting period is locked in at 1 week, 
+            and the voting delay is 1 block. There is no delay on approved proposals.</p>
         </div>
-      </div>
-
-      <div className="container popular-frameworks-section">
-        <h2 style={{ textAlign: 'center', marginRight: '20px' }}>Popular Ethereum Frameworks</h2>
-        <div className="row justify-content-center">
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('./images/metamask.png')} alt="Metamask" />
-              <h5>MetaMask</h5>
-              <p>A crypto wallet and gateway to blockchain apps.</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('./images/alchemy.png')} alt="Alchemy" />
-              <h5>Alchemy</h5>
-              <p>The platform for blockchain developers to build apps.</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('./images/polygon.png')} alt="Polygon" />
-              <h5>Infura</h5>
-              <p>A suite of tools for building on Ethereum.</p>
-            </div>
-          </div>
-          <div className="col-md-3">
-            <div className="framework-card">
-              <img src={require('./images/hardhat.png')} alt="Hardhat" />
-              <h5>Hardhat</h5>
-              <p>A development environment for Ethereum.</p>
-            </div>
-          </div>
+        
+        {/* Second Card: Pudgy Penguins */}
+        <div style={cardStyle}>
+        <img src={require('./images/pudgy.png')} alt="Pudgy Penguins" style={imgStyle} />
+        <h5 style={headingStyle}>PudgyPenguins</h5>
+       < p style={paragraphStyle}>The PudgyPenguins contract is an ERC721 token contract that allows users to mint penguin NFT's.
+            The contract supports pausing and resuming the sale, and allows the owner to withdraw funds.</p>
+        </div>
+        
+        {/* Third Card: Vesting Wallet */}
+        <div style={cardStyle}>
+        <img src={require('./images/vesting.png')} alt="Vesting Wallet" style={imgStyle} />
+        <h5 style={headingStyle}>VestingWallet</h5>
+        < p style={paragraphStyle}>This contract is a vesting wallet that allows for the gradual release of native tokens
+             (ether) and ERC20 tokens to a beneficiary over a specified duration.</p>
         </div>
       </div>
+    </div>
 
-      <div>
-        {/* Other sections */}
-        <VideoSlideshow />
-        {/* More sections */}
-      </div>
+    <div className="container popular-frameworks-section">
+    <h2 style={{ textAlign: 'center', marginRight: '20px' }}>Popular Ethereum Frameworks</h2>
+    <div className="row justify-content-center">
+        <div className="col-md-3">
+            <div className="framework-card">
+            <img src={require('./images/metamask.png')} alt="Metamask" />
+                <h5>MetaMask</h5>
+                <p>A crypto wallet and gateway to blockchain apps.</p>
+            </div>
+        </div>
+        <div className="col-md-3">
+            <div className="framework-card">
+            <img src={require('./images/alchemy.png')} alt="Alchemy" />
+                <h5>Alchemy</h5>
+                <p>The platform for blockchain developers to build apps.</p>
+            </div>
+        </div>
+        <div className="col-md-3">
+            <div className="framework-card">
+            <img src={require('./images/infura.png')} alt="Infura" />
+                <h5>Infura</h5>
+                <p>A suite of tools for building on Ethereum.</p>
+            </div>
+        </div>
+        <div className="col-md-3">
+            <div className="framework-card">
+            <img src={require('./images/hardhat.png')} alt="Hardhat" />
+                <h5>Hardhat</h5>
+                <p>A development environment for Ethereum.</p>
+            </div>
+        </div>
+    </div>
+</div>
 
-      {/* Footer */}
-      <footer>
+<div>
+            {/* Other sections */}
+            <VideoSlideshow />
+            {/* More sections */}
+        </div>
+
+{/* Footer */}
+<footer>
         {/* Logo Section */}
         <div className="footer-logo">
-          <img src={require('./images/logo.png')} alt="Logo" />
+        <img src={require('./images/logo.png')} alt="Logo" />
           <h4>Blockedu.dev</h4>
         </div>
 
@@ -151,25 +166,22 @@ const Web = () => {
             <li><a href="#">Terms</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
-          <div className="footer-social">
-            <a href="#" className="me-3"><i className="bi bi-medium"></i> Medium</a>
-            <a href="#" className="me-3"><i className="bi bi-twitter"></i> Twitter</a>
-            <a href="#"><i className="bi bi-discord"></i> Discord</a>
-          </div>
+          
         </div>
       </footer>
+
     </div>
   );
-};
+}
 
 // Separate Documentation Section
 const DocumentationSection = () => {
   const docs = [
-    { name: 'Ethereum Documentation', url: 'https://ethereum.org/en/developers/docs/' },
-    { name: 'Solidity Documentation', url: 'https://docs.soliditylang.org/en/v0.8.19/' },
-    { name: 'Web3.js Documentation', url: 'https://web3js.readthedocs.io/en/v1.7.3/' },
-    { name: 'MetaMask Documentation', url: 'https://docs.metamask.io/guide/' },
-    { name: 'Alchemy Documentation', url: 'https://docs.alchemy.com/alchemy/' },
+    { name: "Ethereum Documentation", url: "https://ethereum.org/en/developers/docs/" },
+    { name: "Solidity Documentation", url: "https://docs.soliditylang.org/en/v0.8.19/" },
+    { name: "Web3.js Documentation", url: "https://web3js.readthedocs.io/en/v1.7.3/" },
+    { name: "MetaMask Documentation", url: "https://docs.metamask.io/guide/" },
+    { name: "Alchemy Documentation", url: "https://docs.alchemy.com/alchemy/" },
   ];
 
   return (
