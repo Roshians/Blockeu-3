@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Blockeu-3/static/css/main.bdf0ae6d.css",
+    "main.js": "/Blockeu-3/static/js/main.fdee84ee.js",
+    "static/js/453.a113ab13.chunk.js": "/Blockeu-3/static/js/453.a113ab13.chunk.js",
+    "static/media/bg-logo.png": "/Blockeu-3/static/media/bg-logo.dbb74cad6a6987656eaa.png",
+    "static/media/vesting.png": "/Blockeu-3/static/media/vesting.58d02d5e7c7eac4587da.png",
+    "static/media/metamask.png": "/Blockeu-3/static/media/metamask.231f6d7dbceb5d2c23d2.png",
+    "static/media/pudgy.png": "/Blockeu-3/static/media/pudgy.951d7ea45134239a783a.png",
+    "static/media/hardhat.png": "/Blockeu-3/static/media/hardhat.a7196122f0d10c9c9999.png",
+    "static/media/polygon.png": "/Blockeu-3/static/media/polygon.89b8dbdf56987774d58e.png",
+    "static/media/alchemy.png": "/Blockeu-3/static/media/alchemy.5396c2e339bd05ea830d.png",
+    "static/media/logo.png": "/Blockeu-3/static/media/logo.2e788dc54feb437abf35.png",
+    "static/media/basicdao.png": "/Blockeu-3/static/media/basicdao.b8e35f663d965deca898.png",
+    "index.html": "/Blockeu-3/index.html",
+    "main.bdf0ae6d.css.map": "/Blockeu-3/static/css/main.bdf0ae6d.css.map",
+    "main.fdee84ee.js.map": "/Blockeu-3/static/js/main.fdee84ee.js.map",
+    "453.a113ab13.chunk.js.map": "/Blockeu-3/static/js/453.a113ab13.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bdf0ae6d.css",
+    "static/js/main.fdee84ee.js"
+  ]
+}
