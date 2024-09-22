@@ -1,0 +1,356 @@
+body {
+     background: radial-gradient(circle, #7804b7, #38086b, #300448, #1f0455); /* Circular gradient */
+
+    color: white;
+  }
+
+  .container-main {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 22px;
+  }
+@-webkit-keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-15px);
+              transform: scale(1.25) translateY(-15px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  @keyframes kenburns-top {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 16%;
+              transform-origin: 50% 16%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(-10px);
+              transform: scale(1.25) translateY(-10px);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+    }
+  }
+  
+  .flex-container {
+    display: flex; /* Use flexbox */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: space-between; /* Space out items */
+    margin-top: 20px; /* Optional: add space above */
+}
+
+.left-container {
+    width:40%; /* Adjust width as needed */
+    margin-right: 200px; /* Space between left and right */
+}
+  .kenburns-bg {
+    width: 35%; /* Full width */
+    height: 60vh; /* Full viewport height */
+    background-image: url("C:/Users/YASHVI GUPTA/OneDrive/Desktop/bg.jpg"); /* Change this to your image */
+    background-size: contain; /* Ensure the image covers the entire element */
+    background-position: right center; /* Center the image */
+    animation: kenburns-top 10s ease-in-out infinite; /* Apply the Ken Burns animation */
+    margin: 50px 100px 100px auto; ;
+     stroke-opacity: 50%;
+    display: flex; /* Center content */
+    align-items: left; /* Vertical alignment */
+    justify-content: right; /* Horizontal alignment */
+    color: white; /* Text color */
+  }
+  
+  .ask-section {
+    margin-top: 20px; /* Space above the ask section */
+    display: flex; /* Use flex display */
+    justify-content: flex-end; /* Align to the right */
+}
+
+
+.ask-button {
+    background-color: black;
+    border: 1px solid white;
+    padding: 10px 30px;
+    color: white;
+    margin: -25px 5px; /* Optional: space around the button */
+}
+
+  
+  /* Chat/Ask Section */
+  .chat-box {
+    background-color: #242424;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 50px 150px; /* Center the chat box */
+    width: 100%; /* Adjust width as needed */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    align-self: flex-end; /* Align the chat box to the right */
+}
+
+
+  
+  .chat-input {
+    background-color: #333;
+    border: none;
+    color: white;
+    padding: 15px;
+    width: 80%;
+    margin-right: 10px;
+  }
+  
+  .chat-input:focus {
+    outline: none;
+  }
+  
+  .chat-messages {
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .chat-messages button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  
+  .featured-section {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  .featured-card {
+    font-size: 20px;
+    background-color: #220593 !important;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+
+  }
+  .featured-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+  
+  .featured-card img {
+    max-width: 80px;
+    margin: 0 auto 15px;
+  }
+
+
+
+.popular-frameworks-section {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.framework-card {
+    background: linear-gradient(135deg, #5b053b, #1E90FF);
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Space above the card */
+    margin-bottom: 20px; /* Space below the card */
+    margin-left: 150px; /* Space to the left of the card */
+    margin-right: 150px; /* Space to the right of the card */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    font-size: 24px;
+    transition: background-color 0.5s ease; /* Smooth color transition */
+    line-height: 10px;
+}
+
+.framework-card h5 {
+    color:  #ADFF2F; /* Change the color of the heading to gold */
+    margin-bottom: 15px;
+}
+
+.framework-card p {
+    color: #ffffff; /* Change the color of the text to green-yellow */
+    margin-top: 10px;
+    line-height: 1.2;
+}
+.framework-card:hover {
+    background: linear-gradient(135deg, #410202, #03386c);
+}
+
+
+.framework-card img {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Maintain aspect ratio */
+    margin-bottom: -20px; /* Space below the image */
+}
+
+.video-slideshow {
+    margin: 40px 0;
+}
+
+.video-slideshow h2 {
+    color: white; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.video-navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.video-navigation button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.video-navigation button:disabled {
+    background-color: #222;
+    cursor: not-allowed;
+}
+
+
+.video-navigation button:hover {
+    background-color: #555;
+}
+
+.documentation-section {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.documentation-list {
+    list-style-type: disc; /* Use disc bullets */
+    padding: 0 20px; /* Indent the list */
+    text-align: left; /* Align text to the left */
+}
+
+.documentation-list li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.documentation-list a {
+    text-decoration: none; /* Remove underline */
+    color: #4CAF50; /* Change color to something more vibrant */
+    font-size: 1.1rem; /* Adjust font size */
+}
+
+.documentation-list a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    background-color: #333333ff;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    display: flex ; /* Use flexbox for alignment */
+    gap : 150px;
+    justify-content: center; /* Center the items */
+    align-items: center; /* Vertically center the items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    height: 300px;
+  }
+  
+  .footer-logo-container {
+    display: flex;
+    flex-direction: column; /* Changed to column for vertical alignment */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    gap: 100px; /* Space between logo and text */
+    margin-left: 50px; /* Adjust as needed */
+    margin-right: 100px; /* Adjust as needed */
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-50px); /* Shift the whole logo container 50px to the left */
+}
+
+.footer-logo img {
+    width: 350px; /* Enlarge the logo */
+    height: 250px; /* Maintain aspect ratio */
+    margin-bottom: -70px; /* Space between logo and text */
+    margin-left: 10px;
+}
+
+.footer-logo-text {
+    /* Add any specific styles for the text here */
+    font-size: 18px; /* Adjust as needed */
+    font-weight: bold; /* If you want the text to be bold */
+}
+  
+  .footer-links {
+    margin-left: 20px; /* Space between logo section and links */
+  }
+  
+  .footer-docs {
+    margin-left: -150px; /* Additional space for documentation section */
+  }
+  
+  .footer-docs h6 {
+    margin-bottom: 10px; /* Space between heading and list */
+  }
+  
+  .footer-docs ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-docs li {
+    margin-bottom: 5px; /* Space between list items */
+  }
+  
+  .footer-docs a {
+    color: #1284e1; /* Vibrant color for links */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-docs a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .footer-links {
+    text-align: right; /* Align links to the right */
+  }
+  
+  .footer-links ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display list items in a row */
+    justify-content: flex-end; /* Align to the end */
+    gap: 15px; /* Space between list items */
+  }
+  
+  .footer-links a {
+    color: white; /* Link color */
+    padding: 0 20px;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  

@@ -1,0 +1,24 @@
+.video-slideshow {
+    font-size: 22px;
+    position: relative;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.nav-button {
+    background: transparent;
+    border: none;
+    font-size: 2rem; /* Adjust size as needed */
+    cursor: pointer;
+    color: white; /* Change color as needed */
+    padding: 0 20px; /* Space around the buttons */
+}
+
+.nav-button:disabled {
+    color: grey; /* Change color for disabled state */
+    cursor: not-allowed;
+}
